@@ -13,7 +13,7 @@
 通过在 URL 上调用 openConnection 方法创建连接对象。
 处理设置参数和一般请求属性。
 使用 connect 方法建立到远程对象的实际连接。
-远程对象变为可用。远程对象的头字段和内容变为可访问。‘package com.javapp.ch11;import java.io.IOException;import java.net.URL;">
+远程对象变为可用。远程对象的头字段和内容变为可访问。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“URL和URLConnection类的用法”">
 <meta property="og:url" content="http://yoursite.com/2016/12/06/“URL和URLConnection类的用法”/index.html">
@@ -23,8 +23,8 @@
 通过在 URL 上调用 openConnection 方法创建连接对象。
 处理设置参数和一般请求属性。
 使用 connect 方法建立到远程对象的实际连接。
-远程对象变为可用。远程对象的头字段和内容变为可访问。‘package com.javapp.ch11;import java.io.IOException;import java.net.URL;">
-<meta property="og:updated_time" content="2016-12-06T15:45:49.458Z">
+远程对象变为可用。远程对象的头字段和内容变为可访问。">
+<meta property="og:updated_time" content="2016-12-06T15:51:24.998Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“URL和URLConnection类的用法”">
 <meta name="twitter:description" content="URL和URLConnection类的用法
@@ -32,7 +32,7 @@
 通过在 URL 上调用 openConnection 方法创建连接对象。
 处理设置参数和一般请求属性。
 使用 connect 方法建立到远程对象的实际连接。
-远程对象变为可用。远程对象的头字段和内容变为可访问。‘package com.javapp.ch11;import java.io.IOException;import java.net.URL;">
+远程对象变为可用。远程对象的头字段和内容变为可访问。">
   
     <link rel="alternative" href="/atom.xml" title="稚梦-雅彪" type="application/atom+xml">
   
@@ -183,29 +183,7 @@
 <li>通过在 URL 上调用 openConnection 方法创建连接对象。</li>
 <li>处理设置参数和一般请求属性。</li>
 <li>使用 connect 方法建立到远程对象的实际连接。</li>
-<li>远程对象变为可用。远程对象的头字段和内容变为可访问。<br>‘package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest{<br> /**<ul>
-<li>@param args<br>*/<br>‘public static void main(String[] args) {<br> try{<pre><code>URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
-//通过在 URL 上调用 openConnection 方法创建连接对象。
-java.net.URLConnection connection=url.openConnection();
-//处理设置参数和一般请求属性
-connection.setDoInput(true);
-connection.setDoOutput(true);
-//使用connection方法建立到远程对象的实际连接
-connection.connect();
-//远程对象变为可用
-System.out.println(connection.getContentType());//返回 content-type 头字段的值。
-System.out.println(connection.getContentEncoding());//返回 content-encoding 头字段的值。
-System.out.println(connection.getContentLength());// 返回 content-length 头字段的值。
-System.out.println(connection.getDate());//返回 date 头字段的值。
-//读取内容
-Scanner in= new Scanner(connection.getInputStream());//返回从此打开的连接读取的输入流。
-while(in.hasNextLine())
-    System.out.println(in.nextLine());
-}catch(IOException e){
-e.printStackTrace();&apos;
-</code></pre> }<br>}<br>}’</li>
-</ul>
-</li>
+<li>远程对象变为可用。远程对象的头字段和内容变为可访问。<package com.javapp.ch11;="" import="" java.io.ioexception;="" java.net.url;="" java.util.scanner;="" public="" class="" urlconnectiontest{="" **="" *="" @param="" args="" static="" void="" main(string[]="" args)="" {="" try{="" url="" url("http:="" www.sohu.com="" ");="" 创建url="" 通过在="" 上调用="" openconnection="" 方法创建连接对象。="" java.net.urlconnection="" connection="url.openConnection();" 处理设置参数和一般请求属性="" connection.setdoinput(true);="" connection.setdooutput(true);="" 使用connection方法建立到远程对象的实际连接="" connection.connect();="" 远程对象变为可用="" system.out.println(connection.getcontenttype());="" 返回="" content-type="" 头字段的值。="" system.out.println(connection.getcontentencoding());="" content-encoding="" system.out.println(connection.getcontentlength());="" content-length="" system.out.println(connection.getdate());="" date="" 读取内容="" scanner="" in="new" scanner(connection.getinputstream());="" 返回从此打开的连接读取的输入流。="" while(in.hasnextline())="" system.out.println(in.nextline());="" }catch(ioexception="" e){="" e.printstacktrace();="" }=""></package></li>
 </ol>
 
       
