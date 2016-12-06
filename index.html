@@ -224,9 +224,8 @@
 <li>通过在 URL 上调用 openConnection 方法创建连接对象。</li>
 <li>处理设置参数和一般请求属性。</li>
 <li>使用 connect 方法建立到远程对象的实际连接。</li>
-<li><p>远程对象变为可用。远程对象的头字段和内容变为可访问。<br><em>/<br>‘’’package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest{<br>/*</em></p>
-<ul>
-<li>@param args<br>*/<br>public static void main(String[] args) {<br>// TODO Auto-generated method stub<br>try{<pre><code>URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
+<li>远程对象变为可用。远程对象的头字段和内容变为可访问。<br><em>/<br>package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest{<br>/*</em><ul>
+<li>@param args<br>*/<br>public static void main(String[] args) {<br>try{<pre><code>URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
 //通过在 URL 上调用 openConnection 方法创建连接对象。
 java.net.URLConnection connection=url.openConnection();
 //处理设置参数和一般请求属性
@@ -243,15 +242,14 @@ System.out.println(connection.getDate());//返回 date 头字段的值。
 Scanner in= new Scanner(connection.getInputStream());//返回从此打开的连接读取的输入流。
 while(in.hasNextLine())
     System.out.println(in.nextLine());
-</code></pre>}catch(IOException e){<pre><code>e.printStackTrace();
-</code></pre>}</li>
+}catch(IOException e){
+e.printStackTrace();
+</code></pre>}<br>}<br>}</li>
 </ul>
-<p>}</p>
 </li>
 </ol>
 </li>
 </ul>
-<p>}<br>‘’’<br>‘’’’</p>
 
       
 
