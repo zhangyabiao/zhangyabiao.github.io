@@ -170,35 +170,40 @@
 <li>通过在 URL 上调用 openConnection 方法创建连接对象。 </li>
 <li>处理设置参数和一般请求属性。 </li>
 <li>使用 connect 方法建立到远程对象的实际连接。 </li>
-<li><p>远程对象变为可用。远程对象的头字段和内容变为可访问。<br>*/<br>&lt;<br>package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest {</p>
-<p>/**</p>
-<ul>
-<li>@param args<br>*/<br>public static void main(String[] args) {<br>// TODO Auto-generated method stub<br>try{<pre><code>URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
-//通过在 URL 上调用 openConnection 方法创建连接对象。
-java.net.URLConnection connection=url.openConnection();
-//处理设置参数和一般请求属性
-connection.setDoInput(true);
-connection.setDoOutput(true);
-//使用connection方法建立到远程对象的实际连接
-connection.connect();
-//远程对象变为可用
-System.out.println(connection.getContentType());//返回 content-type 头字段的值。
-System.out.println(connection.getContentEncoding());//返回 content-encoding 头字段的值。
-System.out.println(connection.getContentLength());// 返回 content-length 头字段的值。
-System.out.println(connection.getDate());//返回 date 头字段的值。
-//读取内容
-Scanner in= new Scanner(connection.getInputStream());//返回从此打开的连接读取的输入流。
-while(in.hasNextLine())
-    System.out.println(in.nextLine());
-</code></pre>}catch(IOException e){<pre><code>e.printStackTrace();
-</code></pre>}</li>
-</ul>
-<p>}</p>
-</li>
+<li>远程对象变为可用。远程对象的头字段和内容变为可访问。<br>*/</li>
 </ol>
 </li>
 </ul>
-<p>}<br>/&gt;</p>
+<p>package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest {</p>
+<pre><code>/**
+ * @param args
+ */
+public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    try{
+        URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
+        //通过在 URL 上调用 openConnection 方法创建连接对象。
+        java.net.URLConnection connection=url.openConnection();
+        //处理设置参数和一般请求属性
+        connection.setDoInput(true);
+        connection.setDoOutput(true);
+        //使用connection方法建立到远程对象的实际连接
+        connection.connect();
+        //远程对象变为可用
+        System.out.println(connection.getContentType());//返回 content-type 头字段的值。
+        System.out.println(connection.getContentEncoding());//返回 content-encoding 头字段的值。
+        System.out.println(connection.getContentLength());// 返回 content-length 头字段的值。
+        System.out.println(connection.getDate());//返回 date 头字段的值。
+        //读取内容
+        Scanner in= new Scanner(connection.getInputStream());//返回从此打开的连接读取的输入流。
+        while(in.hasNextLine())
+            System.out.println(in.nextLine());
+    }catch(IOException e){
+        e.printStackTrace();
+    }
+
+}
+</code></pre><p>}</p>
 
       
 
