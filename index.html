@@ -146,6 +146,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-“URL和URLConnection类的用法”" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/06/“URL和URLConnection类的用法”/">“URL和URLConnection类的用法”</a>
+    </h1>
+  
+
+        <a href="/2016/12/06/“URL和URLConnection类的用法”/" class="archive-article-date">
+  	<time datetime="2016-12-06T09:23:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-06</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>/*URL和URLConnection类的用法</p>
+<ul>
+<li><ol>
+<li>通过在 URL 上调用 openConnection 方法创建连接对象。 </li>
+<li>处理设置参数和一般请求属性。 </li>
+<li>使用 connect 方法建立到远程对象的实际连接。 </li>
+<li><p>远程对象变为可用。远程对象的头字段和内容变为可访问。<br>*/<br>&lt;<br>package com.javapp.ch11;<br>import java.io.IOException;<br>import java.net.URL;<br>import java.util.Scanner;<br>public class URLConnectionTest {</p>
+<p>/**</p>
+<ul>
+<li>@param args<br>*/<br>public static void main(String[] args) {<br>// TODO Auto-generated method stub<br>try{<pre><code>URL url=new URL(&quot;http://www.sohu.com/&quot;);//创建URL
+//通过在 URL 上调用 openConnection 方法创建连接对象。
+java.net.URLConnection connection=url.openConnection();
+//处理设置参数和一般请求属性
+connection.setDoInput(true);
+connection.setDoOutput(true);
+//使用connection方法建立到远程对象的实际连接
+connection.connect();
+//远程对象变为可用
+System.out.println(connection.getContentType());//返回 content-type 头字段的值。
+System.out.println(connection.getContentEncoding());//返回 content-encoding 头字段的值。
+System.out.println(connection.getContentLength());// 返回 content-length 头字段的值。
+System.out.println(connection.getDate());//返回 date 头字段的值。
+//读取内容
+Scanner in= new Scanner(connection.getInputStream());//返回从此打开的连接读取的输入流。
+while(in.hasNextLine())
+    System.out.println(in.nextLine());
+</code></pre>}catch(IOException e){<pre><code>e.printStackTrace();
+</code></pre>}</li>
+</ul>
+<p>}</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>}<br>/&gt;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/06/“URL和URLConnection类的用法”/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
